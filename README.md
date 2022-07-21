@@ -8,4 +8,7 @@
 ### How to Run the Test cases
 After you setup everything now you need to go to `test` folder. inside the folder you can find
 `com.bol.services` packages then you will find few classes find the `UnitTest` class
-and run the class.   
+and run the class.
+
+### How to run project
+Find the `con.bol.AppInit` file and run the main method.
