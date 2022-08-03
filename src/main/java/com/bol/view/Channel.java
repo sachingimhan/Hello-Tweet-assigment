@@ -5,8 +5,8 @@
  */
 package com.bol.view;
 
-import com.bol.event.ChannelListener;
 import com.bol.services.ChannelObservable;
+import java.util.Date;
 import javax.swing.JOptionPane;
 
 /**
@@ -143,6 +143,8 @@ public class Channel extends javax.swing.JFrame {
 
     private void btnSendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendActionPerformed
         channelObservable.sendMessage(this.channelName.toLowerCase(), this.channelName + ": " + txtMessage.getText());
+        Date date = new Date();
+        txtLog.append(date.toLocaleString()+" : "+txtMessage.getText());
         txtMessage.setText("");
     }//GEN-LAST:event_btnSendActionPerformed
 
